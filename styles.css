@@ -12,11 +12,12 @@
 }
 #about-title {
     padding-top: 550px;
+    padding-bottom: 60px;
     font-size: 42px;
     font-weight: 530;
 }
 #about-text {
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 530;
 }
 
