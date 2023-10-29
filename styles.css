@@ -1,20 +1,6 @@
-#menu{
+#menu {
     display: block;
     padding: 4px;
-
-}
-#title {
-    font-size: 15px;
-}
-#subtitle {
-    font-size: 42px;
-    font-weight: 530;
-}
-#about-title {
-    padding-top: 150px;
-    padding-bottom: 60px;
-    font-size: 42px;
-    font-weight: 530;
 }
 #about-text {
     font-size: 18px;
@@ -44,7 +30,6 @@ header {
 }
 ul {
     list-style: none;
-    border: 1px solid;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -67,6 +52,7 @@ li a:hover {
     text-decoration: #222222;
 }
 
+
 .button {
     text-decoration: none;
     color: white;
@@ -86,15 +72,17 @@ li a:hover {
     text-align: center;
     padding-top: 120px;
 }
-.about {
-    text-align: center;
-}
 .professional-links {
     padding-top: 60px;
     padding-bottom: 60px;
     display: flex;
     justify-content: center;
     font-size: 25px;
+}
+.header {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 530;
 }
 
 
