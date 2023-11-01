@@ -2,6 +2,10 @@
     display: block;
     padding: 4px;
 }
+#about-text {
+    font-size: 18px;
+    font-weight: 530;
+}
 #linkedin {
     margin-right: 20px;
 }
@@ -19,38 +23,11 @@
     display: block;
     text-align: center;
 }
-#contact {
-    display: inline-block; 
-    padding-left: 150px; 
-    padding-top: 100px; 
-    padding-bottom: 300px; 
-    position: absolute; 
-}
-#about {
-    text-align:center; 
-    padding-top: 100px; 
-    display: inline-block;
-    padding-left: 65px;
-}
-#message {
-    width: 300px;
-    height: 200px;
-    border-radius: 8px;
-}
-#submit {
-    width: 100px;
-    height: 50px;
-    background-color: #111111;
-    color: white;
-    border-radius: 8px;
-    margin-top: 10px;
-    margin-left: 200px;
-}
-#submit:hover {
-    background-color: #007fbc;
-    text-decoration: white;
-}
 
+
+header {
+    display: inline;
+}
 ul {
     list-style: none;
     list-style-type: none;
@@ -107,6 +84,9 @@ li a:hover {
     font-size: 42px;
     font-weight: 530;
 }
+
+
+
 
 
 @font-face {
