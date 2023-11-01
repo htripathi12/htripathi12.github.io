@@ -1,2 +1,2 @@
 # htripathi12.github.io
-test2
+Personal website portfolio to showcase projects
