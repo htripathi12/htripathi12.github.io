@@ -100,7 +100,9 @@ li a:hover {
     display: flex;
     justify-content: center;
 }
-
+.submit {
+    padding-left: 63%;
+}
 
 
 
