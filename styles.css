@@ -62,6 +62,14 @@ li a:hover {
     background-color: #111111;
     text-decoration: #222222;
 }
+textarea {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: black;
+    color: white;
+    padding: 4px;
+    resize: none;
+}
 
 
 .button {
@@ -103,7 +111,14 @@ li a:hover {
 .submit {
     padding-left: 63%;
 }
-
+.form {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: black;
+    color: white;
+    padding: 4px;
+    resize: none;
+}
 
 
 
