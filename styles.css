@@ -23,11 +23,22 @@
     display: block;
     text-align: center;
 }
-
-
-header {
-    display: inline;
+#submit {
+    width: 100px;
+    height: 50px;
+    background-color: #111111;
+    color: white;
+    border-radius: 8px;
+    margin-top: 10px;
+    justify-content: center;
+    display: flex;
 }
+#submit:hover {
+    background-color: #007fbc;
+    text-decoration: white;
+}
+
+
 ul {
     list-style: none;
     list-style-type: none;
@@ -83,6 +94,11 @@ li a:hover {
     text-align: center;
     font-size: 42px;
     font-weight: 530;
+}
+.top-form {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
 }
 
 
