@@ -32,10 +32,15 @@
     margin-top: 10px;
     justify-content: center;
     display: flex;
+    font-size: 15px;
 }
 #submit:hover {
     background-color: #007fbc;
     text-decoration: white;
+}
+#education-title {
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -120,7 +125,12 @@ textarea {
     padding: 4px;
     resize: none;
 }
-
+.education {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    border: 1px solid #ccc;
+}
 
 
 @font-face {
