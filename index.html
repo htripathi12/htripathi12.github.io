@@ -86,10 +86,17 @@
                 document.getElementById('splash').style.display = 'none';
             }, 500); // Adjust the delay (in milliseconds) to match the CSS transition duration
         }
+        function showLI() {
+            document.getElementById('LIimage').style.opacity = '1';
+            setTimeout(() => {
+                document.getElementById('LIimage').style.display = 'block';
+            }, 500); // Adjust the delay (in milliseconds) to match the CSS transition duration
+        }
 
         // Event listener to trigger hideSplash after a delay
         window.addEventListener('load', function() {
             setTimeout(hideSplash, 1500); // Adjust the delay (in milliseconds) as needed
+            setTimeout(showLI, 1500);
         });
     </script>
 </body>
