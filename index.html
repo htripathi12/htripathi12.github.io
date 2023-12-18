@@ -4,9 +4,15 @@
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <title>Personal Website</title>
+    
 </head>
 <body style="font-family:Lato; background-color:black; color: white">
-    <script></script>
+    <div class="splash">
+        <div class="splash-content">
+            <h1>Welcome</h1>
+        </div>
+    </div>
+
     <header>
         <nav>
             <ul id = "menu">
@@ -16,7 +22,7 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="new-content">
        <div class="introduction">
             <div style="font-size: 15px;">Hello!</div>
             <div class="header">I'm Hersh Tripathi</div>
@@ -74,6 +80,16 @@
             </form>
         </div>
     </main>
-    
+    <script>
+        // Function to fade out the splash screen
+        function fadeOutSplash() {
+            document.querySelector('.splash').className = 'splash.fade-out';
+        }
 
+        // Event listener to trigger fadeOutSplash after a delay
+        window.addEventListener('load', function() {
+            setTimeout(fadeOutSplash, 1500); // Adjust the delay (in milliseconds) as needed
+        });
+    </script>
+</body>
 </html>
