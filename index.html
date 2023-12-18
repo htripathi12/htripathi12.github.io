@@ -7,6 +7,12 @@
     
 </head>
 <body style="font-family:Lato; background-color:black; color: white">
+    <div class="splash" id="splash">
+        <div class="splash-content">
+            <h1>Welcome!</h1>
+        </div>
+    </div>
+
 
     <header>
         <nav>
@@ -75,6 +81,19 @@
             </form>
         </div>
     </main>
-    
+    <script>
+        // Function to hide the splash screen
+        function hideSplash() {
+            document.getElementById('splash').style.opacity = '0';
+            setTimeout(() => {
+                document.getElementById('splash').style.display = 'none';
+            }, 500); // Adjust the delay (in milliseconds) to match the CSS transition duration
+        }
+
+        // Event listener to trigger hideSplash after a delay
+        window.addEventListener('load', function() {
+            setTimeout(hideSplash, 1500); // Adjust the delay (in milliseconds) as needed
+        });
+    </script>
 </body>
 </html>

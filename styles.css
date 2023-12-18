@@ -133,6 +133,27 @@ textarea {
     display: flex;
     border: 1px solid #ccc;
 }
+.splash {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+}
+
+.splash-content {
+    text-align: center;
+    color: white;
+    font-size: 36px;
+}
+
+
 
 @font-face {
     font-family: Lato;
