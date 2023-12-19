@@ -9,7 +9,8 @@
 
 #linkedin, #resume, #github {
     margin-right: 20px;
-    padding: 10px;
+    padding-bottom: 15px;
+    font-weight: 100;
 }
 #resume a {
     text-align: center;
@@ -100,11 +101,14 @@ textarea {
     text-decoration: white;
 }
 .professional-links {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    display: flex;
+    padding-top: 225px;
+    display: inline-block;
     justify-content: center;
-    font-size: 25px;
+    font-size: 40px;
+}
+.first-block {
+    display: flex;
+    justify-content: space-evenly;
 }
 .header {
     text-align: center;
