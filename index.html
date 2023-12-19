@@ -7,10 +7,10 @@
     
 </head>
 <body style="font-family:Lato; background-color:black; color: white">
-    <div class="splash" id="splash">
+    <div class="splash" id="temp">
         <div class="splash-content">
             <h1>Welcome!</h1>
-            <h3 id="splash2">My name is Hersh!</h3>
+            <h3 id="name">My name is Hersh!</h3>        
         </div>
     </div>
 
@@ -82,16 +82,10 @@
     <script>
         // Function to hide the splash screen
         function hideSplash() {
-            document.getElementById('splash').style.opacity = '0';
-            document.getElementById('splash2').style.opacity = '0';
+            document.getElementById('temp').style.opacity = '0';
             setTimeout(() => {
-                document.getElementById('splash').style.display = 'none';
-                document.getElementById('splash2').style.display = 'none';
+                document.getElementById('temp').style.display = 'none';
             }, 2000); // Adjust the delay (in milliseconds) to match the CSS transition duration
-        }
-        function showSplashTwo() {
-            document.getElementById('splash2').style.opacity = '1';
-            document.getElementById('splash2').style.display = 'block';
         }
 
 
@@ -104,9 +98,8 @@
 
         // Event listener to trigger hideSplash after a delay
         window.addEventListener('load', function() {
-            setTimeout(showSplashTwo, 750);
-            setTimeout(hideSplash, 1500); // Adjust the delay (in milliseconds) as needed
-            //setTimeout(showLI, 1500);
+            setTimeout(hideSplash, 2000); // Adjust the delay (in milliseconds) as needed
+            setTimeout(showLI, 2000);
         });
     </script>
 </body>
