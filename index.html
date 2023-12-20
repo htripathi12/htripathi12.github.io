@@ -32,7 +32,7 @@
                 <p>First year Student at Purdue University studying 
                     <br>Computer Science pursuing specialization in AI and ML</p>
             </div>
-            <div class="professional-links">
+            <div class="professional-links" id="button-animation">
                 <div id="linkedin" style="padding-bottom: 10px;">
                     <a href="https://www.linkedin.com/in/hersh-tripathi-663a47225/" class="button">
                         <i class='bx bxl-linkedin'></i></a>
@@ -40,17 +40,19 @@
                 <div id="resume" style="padding-bottom: 10px;">
                     <a href="imagesAndResume/FinalResume4.pdf" class="button">CV</a>
                 </div>
-                <div id="github">
+                <div id="github" style="padding-bottom: 10px;">
                     <a href="https://github.com/htripathi12" class="button">
                         <i class='bx bxl-github'></i></a>
-                        
                 </div>
+                <div id="gmail">
+                    <a href="tripathihersh@gmail.com" class="button">
+                        <i class='bx bxl-gmail'></i></a>
             </div>
         </div>
 
 
         
-        <div class="header">
+        <!-- <div class="header">
             <div id="experience-title">Experience</div>
             <div id="experience-text"></div>
         </div>
@@ -58,11 +60,11 @@
         <div style="padding-top: 100px;">
             <div class="header">Education</div>
             
-        </div>
+        </div> -->
         
         
         
-        <div style="padding-top: 100px;">
+        <!-- <div style="padding-top: 100px;">
             <div class="header">Contact</div>
             <form action="/action_page.php" method="get">
                 <div class="top-form">
@@ -83,7 +85,7 @@
                     <input type="submit" value="Submit" id="submit">
                 </div>
             </form>
-        </div>
+        </div> -->
     </main>
     <script>
         // Function to hide the splash screen
@@ -94,35 +96,14 @@
             }, 2000); // Adjust the delay (in milliseconds) to match the CSS transition duration
         }
 
-
-        function showLI() {
-            document.getElementById('LIimage').style.opacity = '1';
-            setTimeout(() => {
-                document.getElementById('LIimage').style.display = 'block';
-            }, 500); // Adjust the delay (in milliseconds) to match the CSS transition duration
-        }
-        function showGitHub() {
-            document.getElementById('GitHubImage').style.opacity = '1';
-            setTimeout(() => {
-                document.getElementById('GitHubImage').style.display = 'block';
-            }, 500); // Adjust the delay (in milliseconds) to match the CSS transition duration
-        }
-        function showResume() {
-            document.getElementById('ResumeImage').style.opacity = '1';
-            setTimeout(() => {
-                document.getElementById('ResumeImage').style.display = 'block';
-            }, 500); // Adjust the delay (in milliseconds) to match the CSS transition duration
-        }
         function showImages() {
-            showLI();
-            showGitHub();
-            showResume();
+            document.getElementById('button-animation').style.opacity = '1';
         }
 
         // Event listener to trigger hideSplash after a delay
         window.addEventListener('load', function() {
             setTimeout(hideSplash, 2000); // Adjust the delay (in milliseconds) as needed
-            setTimeout(showImages, 2000);
+            setTimeout(showButtons, 2000);
         });
     </script>
 </body>

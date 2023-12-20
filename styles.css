@@ -11,11 +11,6 @@
     font-weight: 100;
     text-align: center;
 }
-i {
-    display: flex;
-    justify-content: center;
-}
-
 
 #submit {
     width: 300px;
@@ -74,25 +69,41 @@ textarea {
     padding: 4px;
     resize: none;
 }
+i {
+    display: flex;
+    justify-content: center;
+}
+
 
 
 .button {
     text-decoration: none;
     color: white;
     background-color: #111111;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     border-radius: 50%;
     padding: 10px;
     display:flex;
     justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 2s;
 }
 .button:hover {
     background-color: #007fbc;
     text-decoration: white;
+    box-shadow: 0 0 2px 1px #ccc;
 }
 .professional-links {
-    padding-top: 225px;
     font-size: 25px;
+    padding-top: 170px;
+    padding-left: 20px;
+}
+.professional-links a {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
 }
 .first-block {
     display: flex;
@@ -153,6 +164,16 @@ textarea {
         opacity: 0;
     }
     to {
+        opacity: 1;
+    }
+}
+@keyframes slideLeft {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0px);
         opacity: 1;
     }
 }
