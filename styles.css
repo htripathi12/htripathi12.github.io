@@ -2,48 +2,19 @@
     display: block;
     padding: 4px;
 }
-#about-text {
-    font-size: 18px;
-    font-weight: 530;
+#about {
+    text-align:center; 
+    padding-top: 100px;
+    opacity: 0;
+    animation: slideRight 2s ease forwards;
+    animation-delay: 2s;
 }
 
-#linkedin, #resume, #github {
-    margin-right: 20px;
-    padding: 10px;
-}
-#resume a {
+#resume{
+    font-weight: 100;
     text-align: center;
 }
 
-#LIimage, #ResumeImage, #GitHubImage {
-    width: 30px;
-    height: 30px;
-    position: relative;
-    right: 10px;
-    opacity: 0;
-    transition: opacity 0.5s ease-in;
-}
-
-
-#submit {
-    width: 300px;
-    height: 50px;
-    background-color: #111111;
-    color: white;
-    border-radius: 8px;
-    margin-top: 10px;
-    justify-content: center;
-    display: flex;
-    font-size: 15px;
-}
-#submit:hover {
-    background-color: #007fbc;
-    text-decoration: white;
-}
-#education-title {
-    display: flex;
-    justify-content: center;
-}
 #name {
     animation-name: fadeIn;
     animation-duration: 2s;
@@ -74,67 +45,54 @@ li a:hover {
     background-color: #111111;
     text-decoration: #222222;
 }
-textarea {
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    background-color: black;
-    color: white;
-    padding: 4px;
-    resize: none;
+
+i {
+    display: flex;
+    justify-content: center;
 }
+
 
 
 .button {
     text-decoration: none;
     color: white;
     background-color: #111111;
-    border-radius: 8px;
-    padding-left: 20px;
-    padding-right: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    padding: 10px;
     display:flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: slideLeft 2s ease forwards;
+    animation-delay: 2s;
 }
 .button:hover {
     background-color: #007fbc;
     text-decoration: white;
+    box-shadow: 0 0 10px 2px #ccc;
 }
 .professional-links {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    font-size: 25px;
+    padding-top: 170px;
+    padding-left: 20px;
+}
+.professional-links a {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+}
+.first-block {
     display: flex;
     justify-content: center;
-    font-size: 25px;
+    padding-bottom: 30px;
 }
 .header {
     text-align: center;
     font-size: 42px;
     font-weight: 530;
 }
-.top-form {
-    padding-top: 30px;
-    display: flex;
-    justify-content: center;
-}
-.submit {
-    display: flex;
-    justify-content: center;
-}
-.form {
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    background-color: black;
-    color: white;
-    padding: 4px;
-    resize: none;
-}
-.education {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    padding-left: 20px;
-    display: flex;
-    border: 1px solid #ccc;
-}
+
 .splash {
     position: fixed;
     top: 0;
@@ -160,6 +118,26 @@ textarea {
         opacity: 0;
     }
     to {
+        opacity: 1;
+    }
+}
+@keyframes slideLeft {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideRight {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0px);
         opacity: 1;
     }
 }

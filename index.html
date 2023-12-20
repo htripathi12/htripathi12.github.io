@@ -4,9 +4,9 @@
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <title>Personal Website</title>
-    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-<body style="font-family:Lato; background-color:black; color: white">
+<body style="font-family:Lato; background-color:rgb(0, 0, 0); color: white">
     <div class="splash" id="temp">
         <div class="splash-content">
             <h1>Welcome!</h1>
@@ -24,61 +24,32 @@
             </ul>
         </nav>
     </header>
-    <main class="new-content">
-       <div class="professional-links">
-            <div id="linkedin">
-                <a href="https://www.linkedin.com/in/hersh-tripathi-663a47225/" class="button">
-                    <img src="imagesAndResume/LinkedIn_icon.svg.png" id="LIimage">LinkedIn</a>
+    <main>
+        <div class="first-block">
+            <div id="about">
+                <div class="header">About</div>
+                <img src="imagesAndResume/IMG_6564.jpg" width="200" height="300" alt="Hersh Tripathi" id="profile-pic">
+                <p>First year Student at Purdue University studying 
+                    <br>Computer Science pursuing specialization in AI and ML</p>
             </div>
-            <div id="resume">
-                <a href="imagesAndResume/FinalResume4.pdf" class="button">
-                    <img src="imagesAndResume/resume.png" id="ResumeImage">Resume</a>
-            </div>
-            <div id="github">
-                <a href="https://github.com/htripathi12" class="button">
-                    <img src="imagesAndResume/GitHub_icon.png" id="GitHubImage">Github</a>
+            <div class="professional-links">
+                <div id="linkedin" style="padding-bottom: 10px;">
+                    <a href="https://www.linkedin.com/in/hersh-tripathi-663a47225/" class="button">
+                        <i class='bx bxl-linkedin'></i></a>
+                </div>
+                <div id="resume" style="padding-bottom: 10px;">
+                    <a href="imagesAndResume/FinalResume4.pdf" class="button">CV</a>
+                </div>
+                <div id="github" style="padding-bottom: 10px;">
+                    <a href="https://github.com/htripathi12" class="button">
+                        <i class='bx bxl-github'></i></a>
+                </div>
+                <div id="gmail">
+                    <a href="mailto:tripathihersh@gmail.com" class="button">
+                        <i class='bx bx-mail-send' ></i>
+                    </a>
                     
             </div>
-       </div>
-       <div style="text-align:center; padding-top: 100px;">
-            <div class="header">About</div>
-            <img src="imagesAndResume/IMG_6564.jpg" width="200" height="300" alt="Hersh Tripathi" id="profile-pic">
-            <p>First year Student at Purdue University studying 
-                <br>Computer Science pursuing specialization in AI and ML</p>
-        </div>
-        <div class="header">
-            <div id="experience-title">Experience</div>
-            <div id="experience-text"></div>
-        </div>
-        
-        <div style="padding-top: 100px;">
-            <div class="header">Education</div>
-            
-        </div>
-        
-        
-        
-        <div style="padding-top: 100px;">
-            <div class="header">Contact</div>
-            <form action="/action_page.php" method="get">
-                <div class="top-form">
-                    <div>
-                        <label for="fname">Name<br></label>
-                        <input type="text" class="form" size="40">
-                    </div>
-                    <div style="padding-left: 20px;">
-                        <label for="email">Email<br></label>
-                        <input type="text" class="form" size="40">
-                    </div>
-                </div>
-                <div style="text-align: center;">
-                    <label for="message" style="display: flex; justify-content: center; padding-right: 530px;"><br><br>Message<br></label>
-                    <textarea id="message" cols="70" rows="15"></textarea>
-                </div>
-                <div class="submit">
-                    <input type="submit" value="Submit" id="submit">
-                </div>
-            </form>
         </div>
     </main>
     <script>
@@ -90,35 +61,14 @@
             }, 2000); // Adjust the delay (in milliseconds) to match the CSS transition duration
         }
 
-
-        function showLI() {
-            document.getElementById('LIimage').style.opacity = '1';
-            setTimeout(() => {
-                document.getElementById('LIimage').style.display = 'block';
-            }, 500); // Adjust the delay (in milliseconds) to match the CSS transition duration
-        }
-        function showGitHub() {
-            document.getElementById('GitHubImage').style.opacity = '1';
-            setTimeout(() => {
-                document.getElementById('GitHubImage').style.display = 'block';
-            }, 500); // Adjust the delay (in milliseconds) to match the CSS transition duration
-        }
-        function showResume() {
-            document.getElementById('ResumeImage').style.opacity = '1';
-            setTimeout(() => {
-                document.getElementById('ResumeImage').style.display = 'block';
-            }, 500); // Adjust the delay (in milliseconds) to match the CSS transition duration
-        }
         function showImages() {
-            showLI();
-            showGitHub();
-            showResume();
+            document.getElementById('button-animation').style.opacity = '1';
         }
 
         // Event listener to trigger hideSplash after a delay
         window.addEventListener('load', function() {
             setTimeout(hideSplash, 2000); // Adjust the delay (in milliseconds) as needed
-            setTimeout(showImages, 2000);
+            setTimeout(2000);
         });
     </script>
 </body>
