@@ -7,23 +7,13 @@
     font-weight: 530;
 }
 
-#linkedin, #resume, #github {
-    margin-right: 20px;
-    padding-bottom: 15px;
+#resume{
     font-weight: 100;
-}
-#resume a {
     text-align: center;
 }
-
-#LIimage, #ResumeImage, #GitHubImage {
-    width: 30px;
-    height: 30px;
-    position: relative;
-    top: 9px;
-    right: 10px;
-    opacity: 0;
-    transition: opacity 0.5s ease-in;
+i {
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -90,13 +80,11 @@ textarea {
     text-decoration: none;
     color: white;
     background-color: #111111;
-    border: 1px solid #007fbc;
-    border-radius: 8px;
-    padding-left: 20px;
-    padding-right: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    padding: 10px;
     display:flex;
+    justify-content: center;
 }
 .button:hover {
     background-color: #007fbc;
@@ -104,13 +92,11 @@ textarea {
 }
 .professional-links {
     padding-top: 225px;
-    display: inline-block;
-    justify-content: center;
-    font-size: 40px;
+    font-size: 25px;
 }
 .first-block {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     padding-bottom: 30px;
 }
 .header {
