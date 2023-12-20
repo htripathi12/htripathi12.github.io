@@ -4,7 +4,10 @@
 }
 #about {
     text-align:center; 
-    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     opacity: 0;
     animation: slideRight 2s ease forwards;
     animation-delay: 2s;
@@ -92,6 +95,7 @@ i {
     justify-content: center;
     width: 100%;
     padding-bottom: 30px;
+    padding-top: 50px;
 }
 .header {
     text-align: center;
