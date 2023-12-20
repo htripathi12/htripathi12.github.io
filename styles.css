@@ -74,8 +74,10 @@ i {
 }
 .professional-links {
     font-size: 25px;
-    padding-top: 170px;
-    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .professional-links a {
     display: inline-flex;
@@ -85,6 +87,7 @@ i {
 .first-block {
     display: flex;
     justify-content: center;
+    width: 100%;
     padding-bottom: 30px;
 }
 .header {
