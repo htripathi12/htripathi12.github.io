@@ -2,9 +2,12 @@
     display: block;
     padding: 4px;
 }
-#about-text {
-    font-size: 18px;
-    font-weight: 530;
+#about {
+    text-align:center; 
+    padding-top: 100px;
+    opacity: 0;
+    animation: slideRight 2s ease forwards;
+    animation-delay: 2s;
 }
 
 #resume{
@@ -12,25 +15,6 @@
     text-align: center;
 }
 
-#submit {
-    width: 300px;
-    height: 50px;
-    background-color: #111111;
-    color: white;
-    border-radius: 8px;
-    margin-top: 10px;
-    justify-content: center;
-    display: flex;
-    font-size: 15px;
-}
-#submit:hover {
-    background-color: #007fbc;
-    text-decoration: white;
-}
-#education-title {
-    display: flex;
-    justify-content: center;
-}
 #name {
     animation-name: fadeIn;
     animation-duration: 2s;
@@ -61,14 +45,7 @@ li a:hover {
     background-color: #111111;
     text-decoration: #222222;
 }
-textarea {
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    background-color: black;
-    color: white;
-    padding: 4px;
-    resize: none;
-}
+
 i {
     display: flex;
     justify-content: center;
@@ -87,13 +64,13 @@ i {
     justify-content: center;
     align-items: center;
     opacity: 0;
-    animation: slideLeft 1s ease forwards;
+    animation: slideLeft 2s ease forwards;
     animation-delay: 2s;
 }
 .button:hover {
     background-color: #007fbc;
     text-decoration: white;
-    box-shadow: 0 0 2px 1px #ccc;
+    box-shadow: 0 0 10px 2px #ccc;
 }
 .professional-links {
     font-size: 25px;
@@ -115,30 +92,7 @@ i {
     font-size: 42px;
     font-weight: 530;
 }
-.top-form {
-    padding-top: 30px;
-    display: flex;
-    justify-content: center;
-}
-.submit {
-    display: flex;
-    justify-content: center;
-}
-.form {
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    background-color: black;
-    color: white;
-    padding: 4px;
-    resize: none;
-}
-.education {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    padding-left: 20px;
-    display: flex;
-    border: 1px solid #ccc;
-}
+
 .splash {
     position: fixed;
     top: 0;
@@ -170,6 +124,16 @@ i {
 @keyframes slideLeft {
     from {
         transform: translateX(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideRight {
+    from {
+        transform: translateX(-100px);
         opacity: 0;
     }
     to {
