@@ -79,12 +79,13 @@ i {
     opacity: 0;
     animation: slideLeft 2s ease forwards;
     animation-delay: 2s;
+    transition: padding .25s;
 }
 .button:hover {
     background-color: #00ffffb9;
     text-decoration: white;
     box-shadow: 0 0 10px 2px #ccc;
-    
+    padding: 12px;
 }
 .professional-links {
     font-size: 25px;
