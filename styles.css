@@ -84,6 +84,7 @@ i {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: 50px;
 }
 .professional-links a {
     display: inline-flex;
@@ -94,7 +95,6 @@ i {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding-bottom: 30px;
     padding-top: 50px;
 }
 .header {
