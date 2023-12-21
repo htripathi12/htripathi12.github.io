@@ -1,8 +1,12 @@
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
+        let startTime = Date.now();
         if (entry.isIntersecting) {
-            entry.target.classList.add('show');
+            entry.target.showTimeout = setTimeout(() => {
+                entry.target.classList.add('show');
+            }, 3000);
         } else {
+            clearTimeout(entry.target.showTimeout);
             entry.target.classList.remove('show');
         }
     });
