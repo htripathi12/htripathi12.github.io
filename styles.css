@@ -12,8 +12,15 @@
     animation: slideRight 2s ease forwards;
     animation-delay: 2s;
 }
-
-#resume{
+#about-text {
+    text-align: center; 
+    width: 25%; 
+    margin: 0 auto; 
+    padding-top: 15px; 
+    font-size: 24px; 
+    font-weight: 575
+}
+#resume {
     font-weight: 100;
     text-align: center;
 }
@@ -77,6 +84,7 @@ i {
     background-color: #00ffffb9;
     text-decoration: white;
     box-shadow: 0 0 10px 2px #ccc;
+    
 }
 .professional-links {
     font-size: 25px;
@@ -84,6 +92,7 @@ i {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 30px;
     margin-left: 50px;
 }
 .professional-links a {
@@ -100,7 +109,7 @@ i {
 .header {
     text-align: center;
     font-size: 42px;
-    font-weight: 530;
+    font-weight: 700;
 }
 .splash {
     position: fixed;
@@ -133,6 +142,17 @@ i {
     background: linear-gradient(to right bottom, black 50%, rgb(34, 34, 34) 50.3%);
     display: flex;
 
+}
+.hidden {
+    opacity: 0; 
+    transition: all 1s;
+    filter: blur(5px);
+    transform: translateX(-100%);
+}
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0%);
 }
 
 @keyframes fadeIn {
