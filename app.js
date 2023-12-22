@@ -13,6 +13,3 @@ setTimeout(() => {
     const hiddenElements = document.querySelectorAll('.hidden');
     hiddenElements.forEach((e1) => observer.observe(e1));
 }, 3000);
-
-const hiddenElements = document.querySelectorAll('.hidden');
-hiddenElements.forEach((e1) => observer.observe(e1));

@@ -30,8 +30,15 @@
     animation-duration: 2s;
     animation-fill-mode: forwards;
 }
-#project-text {
-    padding-top: 200px;
+#project-title-section {
+    display: flex; 
+    justify-content: center; 
+    width: 100%;
+}
+#project-header {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
 }
 
 
@@ -132,10 +139,9 @@ i {
 }
 .second-block {
     display: flex;
-    justify-content: center;
     width: 100%;
-    padding-bottom: 30px;
     background-color: rgb(34, 34, 34);
+    flex-wrap: wrap;
 }
 .responsive-diagonal {
     width: 100%;
@@ -148,7 +154,7 @@ i {
     opacity: 0; 
     transition: all 1s;
     filter: blur(5px);
-    transform: translateX(-100%);
+    transform: translateX(-25%);
 }
 .show {
     opacity: 1;
