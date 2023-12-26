@@ -168,12 +168,11 @@ figcaption {
     filter: blur(0);
     transform: translateX(0%);
 }
-.project-list {
-    background-color: rgb(34, 34, 34);
-    align-items: center;
+.project-description {
+    width: 35%;
+    font-size: 20px;
     display: flex;
-    flex-direction: column;
-    border: 1px solid white;
+    align-items: center;
 }
 
 @keyframes fadeIn {
