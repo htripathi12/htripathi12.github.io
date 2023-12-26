@@ -13,12 +13,12 @@
     animation-delay: 2s;
 }
 #about-text {
-    text-align: center; 
-    width: 25%; 
+    width: 20%;
+    text-align: center;
     margin: 0 auto; 
     padding-top: 15px; 
-    font-size: 24px; 
-    font-weight: 575
+    font-size: 19px; 
+    font-weight: 500;
 }
 #resume {
     font-weight: 100;
@@ -37,7 +37,7 @@
 }
 #project-header {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     width: 100%;
     padding-bottom: 50px;
 }
@@ -167,6 +167,13 @@ figcaption {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0%);
+}
+.project-list {
+    background-color: rgb(34, 34, 34);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
 }
 
 @keyframes fadeIn {
