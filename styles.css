@@ -182,6 +182,13 @@ figcaption {
     display: flex;
     align-items: center;
 }
+.tech-icons {
+    display: flex;
+    flex-direction:column; 
+    justify-content: center;
+    padding-left: 20px;
+    font-size: 10px;
+}
 
 @keyframes fadeIn {
     from {
