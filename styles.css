@@ -44,7 +44,7 @@
     padding-bottom: 50px;
 }
 #body-style {
-    font-family: Lato;
+    font-family: Roboto;
     background-color:rgb(0, 0, 0); 
     color: white; 
     margin: 0
@@ -212,6 +212,6 @@ figcaption {
     }
 }
 @font-face {
-    font-family: Lato;
-    src: url(../fonts/Lato-Regular.ttf);
+    font-family: Roboto;
+    src: url(../Roboto/Roboto-Light.ttf);
 }
