@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <title>Personal Website</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script defer src="app.js"></script>
 </head>
-<body style="font-family:Lato; background-color:rgb(0, 0, 0); color: white">
+<body id="body-style">
     <div class="splash" id="temp">
         <div class="splash-content">
             <h1>Welcome!</h1>
@@ -18,9 +19,8 @@
     <header>
         <nav>
             <ul id = "menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#first-block">Home</a></li>
+                <li><a href="#project-title-section">Projects</a></li>
             </ul>
         </nav>
     </header>
@@ -29,8 +29,6 @@
             <div id="about">
                 <div class="header">About</div>
                 <img src="imagesAndResume/IMG_6564.jpg" width="200" height="300" alt="Hersh Tripathi" id="profile-pic">
-                <p>First year Student at Purdue University studying 
-                    <br>Computer Science pursuing specialization in AI and ML</p>
             </div>
             <div class="professional-links">
                 <div id="linkedin" style="padding-bottom: 10px;">
@@ -48,7 +46,45 @@
                     <a href="mailto:tripathihersh@gmail.com" class="button">
                         <i class='bx bx-mail-send' ></i>
                     </a>
-                    
+                </div>
+            </div>
+        </div>
+        <p id="about-text">I am a freshman at Purdue University studying computer science and data science, intending to 
+            double track in software engineering and machine intelligence.</p>
+
+        
+        <div class="responsive-diagonal"></div>
+        <div class="second-block">
+            <div class="hidden" id="project-title-section">
+                Projects
+            </div>
+            <div class="hidden" id="project-header">
+                <figure>
+                    <a href="https://github.com/Leo7Deng/GitMe"><img src="imagesAndResume/GitMeLogo.png" width="458" 
+                        height="200" alt="GitMe Logo"></a>
+                    <figcaption>September 2023</figcaption>
+                </figure>
+                <p class="project-description">
+                    GitMe is a comprehensive full-stack React web application that combines the capabilities of GPT-4 
+                    and GitHub APIs. The app offers users concise and informative summaries of their Github repositories, 
+                    assisting fellow programmers with a tool that can be used to professionally
+                    showcase their work on their resumes. During a hackathon, me and my team showcased this project, 
+                    resulting in a remarkable placement of 3rd out of over 250 participating teams.
+                </p>
+            </div>
+            <div class="hidden" id="project-header">
+                <figure>
+                    <a href="https://github.com/htripathi12/ImageGuru"><img src="imagesAndResume/ImageGuruLogo.png"
+                        width="220" height="200" alt="ImageGuru Logo"></a>
+                    <figcaption>July 2022</figcaption>
+                </figure>
+                <p class="project-description">
+                    ImageGuru is a robust image classification model developed entirely in Python
+                    By leveraging the CIFAR-10 dataset and a diverse set of tools and libraries including Matplotlib, 
+                    scikit-learn, Pandas, Tensorflow, NumPy, and Keras, I meticulously optimized the model's accuracy 
+                    and conducted in-depth analysis on error data. The project was presented to a panel of judges, where 
+                    it earned the highest raw accuracy score among almost 100 cohort members. 
+                </p>
             </div>
         </div>
     </main>
