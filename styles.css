@@ -47,7 +47,7 @@
     font-family: Roboto;
     background-color:rgb(0, 0, 0); 
     color: white; 
-    margin: 0
+    margin: 0;    
 }
 #blank-style {
     text-decoration: none;
@@ -132,7 +132,10 @@ figcaption {
     font-weight: 400;
     padding-top: 10px;
 }
-
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 
 .button {
@@ -290,4 +293,23 @@ figcaption {
 @font-face {
     font-family: Roboto;
     src: url(../Roboto/Roboto-Light.ttf);
+}
+
+/* This applies to the whole page */
+::-webkit-scrollbar {
+    width: 13px; /* Width of the vertical scrollbar */
+    height: 10px; /* Height of the horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(65, 65, 65); /* Color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: white; /* Color of the scroll thumb */
+    border-radius: 10px; /* Roundness of the scroll thumb */
+    border: 1px solid black;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the scroll thumb when hovering */
 }
