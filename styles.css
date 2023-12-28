@@ -71,6 +71,16 @@
     width: 100%;
     left: 0;
 }
+#experience-title {
+    display: flex; 
+    justify-content: center; 
+    width: 100%;
+    font-size: 60px;
+    padding-bottom: 45px;
+    opacity: 0;
+    animation: slideLeft 2s ease forwards;
+    animation-delay: 3s;
+}
 
 
 ul {

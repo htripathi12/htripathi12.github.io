@@ -3,6 +3,9 @@ setTimeout(() => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('show');
+
+                // Unobserve the target element to stop further callbacks
+                observer.unobserve(entry.target);
             } else {
                 clearTimeout(entry.target.showTimeout);
                 entry.target.classList.remove('show');
