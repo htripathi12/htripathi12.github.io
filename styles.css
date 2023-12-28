@@ -24,13 +24,12 @@
     font-weight: 100;
     text-align: center;
 }
-
 #name {
     animation-name: fadeIn;
     animation-duration: 2s;
     animation-fill-mode: forwards;
 }
-#project-title-section {
+#section-title {
     display: flex; 
     justify-content: center; 
     width: 100%;
@@ -57,7 +56,6 @@
     justify-content: center;
     position: relative; /* Add this line */
 }
-
 #blank-style::after {
     content: '';
     position: absolute;
@@ -68,7 +66,6 @@
     background-color: white;
     transition: width 0.3s ease, left 0.3s ease;
 }
-
 #blank-style:hover::after {
     width: 100%;
     left: 0;
@@ -224,6 +221,8 @@ figcaption {
     background-color: rgb(47, 47, 47);
     flex-wrap: wrap;
 }
+
+
 @keyframes fadeIn {
     from {
         opacity: 0;
