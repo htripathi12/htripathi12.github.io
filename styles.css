@@ -71,6 +71,11 @@
     width: 100%;
     left: 0;
 }
+#blank-project {
+    display: flex; 
+    justify-content: center; 
+    flex-direction: column;
+}
 #experience-title {
     display: flex; 
     justify-content: center; 
@@ -241,6 +246,10 @@ figcaption {
     justify-content: center;
     padding-left: 20px;
     font-size: 10px;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+    animation-delay: 3s;
+
 }
 .third-block {
     display: flex;
