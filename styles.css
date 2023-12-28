@@ -49,6 +49,30 @@
     color: white; 
     margin: 0
 }
+#blank-style {
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    position: relative; /* Add this line */
+}
+
+#blank-style::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: white;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+#blank-style:hover::after {
+    width: 100%;
+    left: 0;
+}
 
 
 ul {
