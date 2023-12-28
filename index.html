@@ -17,7 +17,7 @@
 
 
     <header>
-        <nav>
+        <nav style="padding-left: 20px;">
             <ul id = "menu">
                 <li><a href="#first-block">Home</a></li>
                 <li><a href="#section-title">Projects</a></li>
@@ -125,17 +125,12 @@
             document.getElementById('temp').style.opacity = '0';
             setTimeout(() => {
                 document.getElementById('temp').style.display = 'none';
-            }, 2000); // Adjust the delay (in milliseconds) to match the CSS transition duration
-        }
-
-        function showImages() {
-            document.getElementById('button-animation').style.opacity = '1';
+            }, 2000); 
         }
 
         // Event listener to trigger hideSplash after a delay
         window.addEventListener('load', function() {
             setTimeout(hideSplash, 2000); // Adjust the delay (in milliseconds) as needed
-            setTimeout(2000);
         });
     </script>
 </body>

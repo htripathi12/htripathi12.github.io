@@ -1,6 +1,7 @@
 #menu {
     display: block;
     padding: 4px;
+    background-color: black;
 }
 #about {
     text-align:center; 
@@ -95,7 +96,20 @@ li a:hover {
     background-color: #111111;
     text-decoration: #222222;
 }
-
+/* li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: white;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+li a:hover::after {
+    width: 100%;
+    left: 0;
+} */
 i {
     display: flex;
     justify-content: center;
