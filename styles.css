@@ -1,6 +1,7 @@
 #menu {
     display: block;
     padding: 4px;
+    background-color: black;
 }
 #about {
     text-align:center; 
@@ -24,13 +25,12 @@
     font-weight: 100;
     text-align: center;
 }
-
 #name {
     animation-name: fadeIn;
     animation-duration: 2s;
     animation-fill-mode: forwards;
 }
-#project-title-section {
+#section-title {
     display: flex; 
     justify-content: center; 
     width: 100%;
@@ -47,7 +47,7 @@
     font-family: Roboto;
     background-color:rgb(0, 0, 0); 
     color: white; 
-    margin: 0
+    margin: 0;    
 }
 #blank-style {
     text-decoration: none;
@@ -57,7 +57,6 @@
     justify-content: center;
     position: relative; /* Add this line */
 }
-
 #blank-style::after {
     content: '';
     position: absolute;
@@ -68,10 +67,21 @@
     background-color: white;
     transition: width 0.3s ease, left 0.3s ease;
 }
-
 #blank-style:hover::after {
     width: 100%;
     left: 0;
+}
+#blank-project {
+    display: flex; 
+    justify-content: center; 
+    flex-direction: column;
+}
+#experience-title {
+    display: flex; 
+    justify-content: center; 
+    width: 100%;
+    font-size: 60px;
+    padding-bottom: 45px;
 }
 
 
@@ -98,7 +108,20 @@ li a:hover {
     background-color: #111111;
     text-decoration: #222222;
 }
-
+/* li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: white;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+li a:hover::after {
+    width: 100%;
+    left: 0;
+} */
 i {
     display: flex;
     justify-content: center;
@@ -109,7 +132,10 @@ figcaption {
     font-weight: 400;
     padding-top: 10px;
 }
-
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 
 .button {
@@ -200,6 +226,12 @@ figcaption {
     filter: blur(5px);
     transform: translateX(-25%);
 }
+.hidden2 {
+    opacity: 0; 
+    transition: all 1s;
+    filter: blur(5px);
+    transform: translateX(25%);
+}
 .show {
     opacity: 1;
     filter: blur(0);
@@ -217,6 +249,10 @@ figcaption {
     justify-content: center;
     padding-left: 20px;
     font-size: 10px;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+    animation-delay: 3s;
+
 }
 .third-block {
     display: flex;
@@ -224,6 +260,8 @@ figcaption {
     background-color: rgb(47, 47, 47);
     flex-wrap: wrap;
 }
+
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -255,4 +293,23 @@ figcaption {
 @font-face {
     font-family: Roboto;
     src: url(../Roboto/Roboto-Light.ttf);
+}
+
+/* This applies to the whole page */
+::-webkit-scrollbar {
+    width: 13px; /* Width of the vertical scrollbar */
+    height: 10px; /* Height of the horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(65, 65, 65); /* Color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: white; /* Color of the scroll thumb */
+    border-radius: 10px; /* Roundness of the scroll thumb */
+    border: 1px solid black;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the scroll thumb when hovering */
 }

@@ -17,10 +17,11 @@
 
 
     <header>
-        <nav>
+        <nav style="padding-left: 20px;">
             <ul id = "menu">
                 <li><a href="#first-block">Home</a></li>
-                <li><a href="#project-title-section">Projects</a></li>
+                <li><a href="#section-title">Projects</a></li>
+                <li><a href="#experience-title">Experience</a></li>
             </ul>
         </nav>
     </header>
@@ -55,65 +56,107 @@
         
         <div class="responsive-diagonal"></div>
         <div class="second-block">
-            <div class="hidden" id="project-title-section">
+            <div class="hidden" id="section-title">
                 Projects
             </div>
-            <div class="hidden" id="project-header">
-                <figure style="display: flex; justify-content: center; flex-direction: column;">
+            <div id="project-header">
+                <figure class="hidden" id="blank-project">
                     <a href="https://github.com/KrishMay05/Project5" id="blank-style">BLANK Messaging</a>
                     <figcaption>October 2023 - December 2023</figcaption>
                 </figure>
-                <p class="project-description">
+                <div class="project-description">
+                    <p class="hidden2">
                     Blank Messaging is a Java messaging application designed for a marketplace environment to facilitate 
                     seamless consumer-vendor interactions. I implemented advanced multithreading techniques 
                     within a modular code framework to enhance client-server communication efficiency. Additionally, I 
                     played a key role in architecting an intuitive and user-friendly Swing GUI that prioritized optimal 
                     data exchange, responsiveness, and overall scalability.
-                </p>
+                    </p>
+                </div>
                 <div class="tech-icons">
                     <i class='bx bxl-java bx-lg'></i>
                 </div>
             </div>
-            <div class="hidden" id="project-header">
-                <figure>
-                    <a href="https://github.com/Leo7Deng/GitMe"><img src="imagesAndResume/GitMeLogo.png" width="458" 
-                        height="200" alt="GitMe Logo"></a>
+            <div id="project-header">
+                <figure class="hidden">
+                    <a href="https://github.com/Leo7Deng/GitMe"><img src="imagesAndResume/GitMeLogo.png" width="344" 
+                        height="150" alt="GitMe Logo"></a>
                     <figcaption>September 2023</figcaption>
                 </figure>
-                <p class="project-description">
+                <div class="project-description">
+                    <p class="hidden2">
                     GitMe is a comprehensive full-stack React web application that combines the capabilities of GPT-4 
                     and GitHub APIs. The app offers users concise and informative summaries of their Github repositories, 
                     assisting fellow programmers with a tool that can be used to professionally
                     showcase their work on their resumes. During a hackathon, me and my team showcased this project, 
                     resulting in a remarkable placement of 3rd out of over 250 participating teams.
-                </p>
+                    </p>
+                </div>
                 <div class="tech-icons">
                     <i class='bx bxl-python bx-lg'></i>
                     <i class='bx bxl-flask bx-lg' style="padding-top: 10px;"></i>
                     <i class='bx bxl-react bx-lg' style="padding-top: 10px;"></i>
                 </div>
             </div>
-            <div class="hidden" id="project-header">
-                <figure>
+            <div id="project-header">
+                <figure class="hidden">
                     <a href="https://github.com/htripathi12/ImageGuru"><img src="imagesAndResume/ImageGuruLogo.png"
                         width="220" height="200" alt="ImageGuru Logo"></a>
                     <figcaption>July 2022</figcaption>
                 </figure>
-                <p class="project-description">
+                <div class="project-description">
+                    <p class="hidden2">
                     ImageGuru is a robust image classification model developed entirely in Python
                     By leveraging the CIFAR-10 dataset and a diverse set of tools and libraries including Matplotlib, 
                     scikit-learn, Pandas, Tensorflow, NumPy, and Keras, I meticulously optimized the model's accuracy 
                     and conducted in-depth analysis on error data. The project was presented to a panel of judges, where 
                     it earned the highest raw accuracy score among almost 100 cohort members. 
-                </p>
+                    </p>
+                </div>
                 <div class="tech-icons">
                     <i class='bx bxl-python bx-lg'></i>
                 </div>
             </div>
         </div>
         <div class="responsive-diagonal2"></div>
-        <div class="third-block">
-            
+        <div class="third-block" id="experience">
+            <div class="hidden2" id="experience-title">
+                Experience
+            </div>
+            <div id="project-header">
+                <figure class="hidden">
+                    <img src="imagesAndResume/TopCopSneaksLogo.jpeg" width="220" height="200" alt="TopCopSneaks Logo">
+                    <figcaption>March 2020 - Present</figcaption>
+                </figure>
+                <div class="project-description">
+                    <p class="hidden2">
+                        I successfully generated over $50,000 in sales by strategically selling limited-edition sneakers 
+                        on major online marketplaces like StockX, GOAT, eBay, and Facebook Marketplace. Leveraging 
+                        social media platforms such as Instagram and Discord, I marketed products and engaged with a diverse 
+                        audience, building an extensive network of relationships with resellers in cities like Pittsburgh, 
+                        Milwaukee, Boston, Salt Lake City, New York, and Los Angeles. Through this experience, I honed 
+                        valuable skills in negotiation, customer service, marketing, bookkeeping, and packaging.
+                    </p>
+                </div>
+            </div>
+            <div id="project-header">
+                <figure class="hidden">
+                    <img src="imagesAndResume/TheDataMineLogo.png" width="220" height="200" alt="Data Mine Logo">
+                    <figcaption>December 2023 - Present</figcaption>
+                </figure>
+                <div class="project-description">
+                    <p class="hidden2">
+                        I am currently engaged with The Data Mine, an organization at Purdue University 
+                        dedicated to fostering connections between students and corporate sponsors for cutting-edge data 
+                        science projects. Looking ahead to the upcoming semester, I am excited to collaborate with HUMN 
+                        Capital on a project aimed at enhancing manager-employee relationships through the 
+                        implementation of an AI-powered manager coaching tool. In collaboration with my fellow
+                        team members, our focus will be on predicting employee attrition, identifying high performers, 
+                        and uncovering opportunities for management development through sophisticated data analysis 
+                        employing Python, SQL, and R.
+                    </p>
+                </div>
+            </div>
         </div>
     </main>
     <script>
@@ -122,17 +165,12 @@
             document.getElementById('temp').style.opacity = '0';
             setTimeout(() => {
                 document.getElementById('temp').style.display = 'none';
-            }, 2000); // Adjust the delay (in milliseconds) to match the CSS transition duration
-        }
-
-        function showImages() {
-            document.getElementById('button-animation').style.opacity = '1';
+            }, 2000); 
         }
 
         // Event listener to trigger hideSplash after a delay
         window.addEventListener('load', function() {
             setTimeout(hideSplash, 2000); // Adjust the delay (in milliseconds) as needed
-            setTimeout(2000);
         });
     </script>
 </body>
