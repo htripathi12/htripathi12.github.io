@@ -85,43 +85,31 @@
 }
 
 
-ul {
-    list-style: none;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333333;
-}
-li {
-    margin-right: 15px;
+nav a {
     float: left;
-}
-li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 16px;
+    padding: 14px 16px;
     text-decoration: none;
+    font-size: 16px;
+    position: relative; 
 }
-li a:hover {
-    background-color: #111111;
-    text-decoration: #222222;
-}
-/* li a::after {
+
+nav a::after {
     content: '';
     position: absolute;
+    bottom: 0;
+    left: 0;
     width: 0;
     height: 2px;
-    bottom: 0;
-    left: 50%;
-    background-color: white;
-    transition: width 0.3s ease, left 0.3s ease;
+    background: white;
+    transition: width 0.3s;
 }
-li a:hover::after {
+
+nav a:hover::after {
     width: 100%;
-    left: 0;
-} */
+}
 i {
     display: flex;
     justify-content: center;
@@ -312,5 +300,5 @@ html, body {
     border: 1px solid black;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: #555; /* Color of the scroll thumb when hovering */
+    background: #959595; /* Color of the scroll thumb when hovering */
 }
