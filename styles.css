@@ -284,19 +284,19 @@ html, body {
     opacity: 0;
     animation: fadeIn 2s ease forwards;
     animation-delay: 3s;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 .parallax-wrap span {
     position: absolute;
-    height: 8px;
-    width: 8px;
+    height: 7px;
+    width: 7px;
     border-radius: 100%;
     color: red;
 }
 .parallax-wrap span:nth-child(1) {
     top: 70%;
     left: 70%;
-    background: white;
+    background: grey;
     z-index: 3;
 }
 .parallax-wrap span:nth-child(2) {
@@ -314,7 +314,7 @@ html, body {
 .parallax-wrap span:nth-child(4) {
     top: 20%;
     left: 30%;
-    background: white;
+    background: grey;
     z-index: 3;
 }
 .parallax-wrap span:nth-child(5) {
@@ -326,13 +326,13 @@ html, body {
 .parallax-wrap span:nth-child(6) {
     top: 12%;
     left: 70%;
-    background: white;
+    background: rgb(62, 62, 62);
     z-index: 3;
 }
 .parallax-wrap span:nth-child(7) {
     top: 55%;
     left: 25%;
-    background: white;
+    background: rgb(62, 62, 62);
     z-index: 3;
 }
 .parallax-wrap span:nth-child(8) {
@@ -344,7 +344,7 @@ html, body {
 .parallax-wrap span:nth-child(9) {
     top: 70%;
     left: 75%;
-    background: white;
+    background: rgb(62, 62, 62);
     z-index: 3;
 }
 .parallax-wrap span:nth-child(10) {
@@ -356,7 +356,7 @@ html, body {
 .parallax-wrap span:nth-child(11) {
     top: 80%;
     left: 10%;
-    background: white;
+    background: rgb(62, 62, 62);
     z-index: 3;
 }
 .parallax-wrap span:nth-child(12) {
@@ -368,7 +368,7 @@ html, body {
 .parallax-wrap span:nth-child(13) {
     top: 20%;
     left: 85%;
-    background: white;
+    background: grey;
     z-index: 3;
 }
 .parallax-wrap span:nth-child(14) {
@@ -386,37 +386,7 @@ html, body {
 .parallax-wrap span:nth-child(16) {
     top: 70%;
     left: 20%;
-    background: white;
-    z-index: 3;
-}
-.parallax-wrap span:nth-child(17) {
-    top: 30%;
-    left: 50%;
-    background: white;
-    z-index: 3;
-}
-.parallax-wrap span:nth-child(18) {
-    top: 40%;
-    left: 60%;
-    background: white;
-    z-index: 3;
-}
-.parallax-wrap span:nth-child(19) {
-    top: 80%;
-    left: 50%;
-    background: white;
-    z-index: 3;
-}
-.parallax-wrap span:nth-child(20) {
-    top: 10%;
-    left: 40%;
-    background: white;
-    z-index: 3;
-}
-.parallax-wrap span:nth-child(21) {
-    top: 10%;
-    left: 20%;
-    background: white;
+    background: grey;
     z-index: 3;
 }
 @keyframes fadeIn {
