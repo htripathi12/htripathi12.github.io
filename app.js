@@ -19,4 +19,5 @@ setTimeout(() => {
         setTimeout(() => {
             observer.observe(e1);
         }, index * 250); 
-    });}, 3000);
+    });
+}, 3000);
