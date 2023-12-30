@@ -20,4 +20,6 @@ setTimeout(() => {
             observer.observe(e1);
         }, index * 250); 
     });
+    const hiddenElements4 = document.querySelectorAll('.hidden4');
+    hiddenElements4.forEach(e1 => observer.observe(e1));
 }, 3000);
