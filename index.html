@@ -27,7 +27,19 @@
         <div class="header" id="about-title">
             About
         </div>
-        <div class="parallax-wrap">
+        <!-- <div class="parallax-wrap"> -->
+            <!-- <span value="8"></span>
+            <span value="5"></span>
+            <span value="-3"></span>
+            <span value="2"></span>
+            <span value="-4"></span>
+            <span value="6"></span>
+            <span value="-2"></span>
+            <span value="4"></span>
+            <span value="-5"></span>
+            <span value="3"></span>
+            <span value="-6"></span>
+            <span value="1"></span> -->
             <div class="first-block">
                 <div id="about">
                     <img src="imagesAndResume/IMG_6564.jpg" width="213" height="320" alt="Hersh Tripathi" id="profile-pic">
@@ -51,12 +63,7 @@
                     </div>
                 </div>
             </div>
-            <span value="-15"></span>
-            <span value="5"></span>
-            <span value="30"></span>
-            <span value="-5"></span>
-            <span value="15"></span>
-        </div>
+        <!-- </div> -->
         <p id="about-text">I am a freshman at Purdue University studying computer science and data science, intending to 
             double track in software engineering and ML.</p>
 
@@ -185,7 +192,15 @@
         window.addEventListener('load', function() {
             setTimeout(hideSplash, 2000); // Adjust the delay (in milliseconds) as needed
         });
+        // document.addEventListener("mousemove", parallax);
+        // function parallax(event) {
+        //     this.querySelectorAll(".parallax-wrap span").forEach((shift) => {
+        //         const position = shift.getAttribute("value");
+        //         const x = (window.innerWidth - event.pageX * position) / 99;
+        //         const y = (window.innerHeight - event.pageY * position) / 99;
+        //         shift.style.transform = `translateX(${x}px) translateY(${y}px)`;
+        //     });
+        // }
     </script>
-    <script src="/htripathi12.github.io/compiled/parallax.js"></script>
 </body>
 </html>
