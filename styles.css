@@ -60,7 +60,7 @@
     font-size: 40px;
     display: flex;
     justify-content: center;
-    position: relative; /* Add this line */
+    position: relative; 
 }
 #blank-style::after {
     content: '';
@@ -89,7 +89,7 @@
     padding-bottom: 45px;
 }
 
-header {
+/* header {
     padding-top: 13px;
     opacity: 0;
     animation: slideLeft 2s ease forwards;
@@ -120,7 +120,7 @@ nav a::after {
 }
 nav a:hover::after {
     width: 100%;
-}
+} */
 i {
     display: flex;
     justify-content: center;
@@ -430,21 +430,20 @@ html, body {
     src: url(../Roboto/Roboto-Light.ttf);
 }
 
-/* This applies to the whole page */
 ::-webkit-scrollbar {
-    width: 13px; /* Width of the vertical scrollbar */
-    height: 10px; /* Height of the horizontal scrollbar */
+    width: 13px; 
+    height: 10px; 
 }
 
 ::-webkit-scrollbar-track {
-    background: rgb(65, 65, 65); /* Color of the track */
+    background: rgb(65, 65, 65); 
 }
 
 ::-webkit-scrollbar-thumb {
-    background: white; /* Color of the scroll thumb */
-    border-radius: 10px; /* Roundness of the scroll thumb */
+    background: white; 
+    border-radius: 10px;
     border: 1px solid black;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: #959595; /* Color of the scroll thumb when hovering */
+    background: #959595;
 }
