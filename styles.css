@@ -277,14 +277,12 @@ html, body {
 }
 .parallax-wrap {
     position: relative;
-    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     opacity: 0;
     animation: fadeIn 2s ease forwards;
     animation-delay: 3s;
-    /* border: 1px solid white; */
 }
 .parallax-wrap span {
     position: absolute;

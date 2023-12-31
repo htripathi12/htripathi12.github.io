@@ -25,25 +25,31 @@
     </header>
     <main>
         <div class="header" id="about-title">
-            About
+            <div class="parallax-wrap">
+                <span8"></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                About
+            </div>
         </div>
         <div class="parallax-wrap">
-            <span value="8"></span>
-            <span value="5"></span>
-            <span value="-3"></span>
-            <span value="2"></span>
-            <span value="-4"></span>
-            <span value="6"></span>
-            <span value="-2"></span>
-            <span value="4"></span>
-            <span value="-5"></span>
-            <span value="3"></span>
-            <span value="-6"></span>
-            <span value="1"></span>
-            <span value="-7"></span>
-            <span value="7"></span>
-            <span value="-1"></span>
-            <span value="5"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
             <div class="first-block">
                 <div id="about">
                     <img src="imagesAndResume/IMG_6564.jpg" width="213" height="320" alt="Hersh Tripathi" id="profile-pic">
@@ -69,10 +75,10 @@
             </div>
         </div>
         <div class="parallax-wrap">
-            <span value="8"></span>
-            <span value="5"></span>
-            <span value="-3"></span>
-            <span value="2"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
             <p id="about-text">
                 I am a freshman at Purdue University studying computer science and data science, intending to 
                 double track in software engineering and ML.
@@ -198,7 +204,14 @@
                 document.getElementById('temp').style.display = 'none';
             }, 2000); 
         }
-
+        // Function to generate random values for the parallax effect
+        document.querySelectorAll('.parallax-wrap span').forEach((span) => {
+            let randomValue = Math.floor(Math.random() * 9) - 4; // Generates a random integer between -4 and 4
+            if (randomValue >= 0) {
+                randomValue += 1; // Adjusts the value if it's 0 or greater
+            }
+            span.setAttribute('value', randomValue);
+        });
         // Event listener to trigger hideSplash after a delay
         window.addEventListener('load', function() {
             setTimeout(hideSplash, 2000); // Adjust the delay (in milliseconds) as needed
