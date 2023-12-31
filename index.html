@@ -15,19 +15,41 @@
         </div>
     </div>
 
-
-    <header>
+    TODO: Fix the header, parallax JS mousemove interferes somehow I think
+    <!-- <header>
         <nav style="padding-left: 20px;">
             <a href="#first-block">Home</a>
             <a href="#section-title">Projects</a>
             <a href="#experience">Experience</a>
         </nav>
-    </header>
+    </header> -->
     <main>
         <div class="header" id="about-title">
-            About
+            <div class="parallax-wrap">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                About
+            </div>
         </div>
         <div class="parallax-wrap">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
             <div class="first-block">
                 <div id="about">
                     <img src="imagesAndResume/IMG_6564.jpg" width="213" height="320" alt="Hersh Tripathi" id="profile-pic">
@@ -51,21 +73,20 @@
                     </div>
                 </div>
             </div>
-            <span value="-15"></span>
-            <span value="5"></span>
-            <span value="30"></span>
-            <span value="-5"></span>
-            <span value="15"></span>
         </div>
-        <p id="about-text">I am a freshman at Purdue University studying computer science and data science, intending to 
-            double track in software engineering and ML.</p>
-
-        
+        <div class="parallax-wrap">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <p id="about-text">
+                I am a freshman at Purdue University studying computer science and data science, intending to double 
+                track in software engineering and ML.
+            </p>
+        </div>
         <div class="responsive-diagonal"></div>
         <div class="second-block">
-            <div class="hidden4" id="section-title">
-                Projects
-            </div>
+            <div class="hidden4" id="section-title">Projects</div>
             <div id="project-header">
                 <figure class="hidden" id="blank-project">
                     <a href="https://github.com/KrishMay05/Project5" id="blank-style">BLANK Messaging</a>
@@ -101,7 +122,8 @@
                 </div>
                 <div class="tech-icons">
                     <div class="hidden3"><img src="imagesAndResume/python-svgrepo-com.svg" width="50" height="50"></div>
-                    <div class="hidden3"><img src="imagesAndResume/react-javascript-js-framework-facebook-svgrepo-com.svg" width="50" height="50"></div>
+                    <div class="hidden3"><img src="imagesAndResume/react-javascript-js-framework-facebook-svgrepo-com.svg" 
+                        width="50" height="50"></div>
                     <div class="hidden3"><i class='bx bxl-flask bx-lg' style="padding-top: 10px;"></i></div>
                 </div>
             </div>
@@ -123,7 +145,8 @@
                 <div class="tech-icons">
                     <div class="hidden3"><img src="imagesAndResume/python-svgrepo-com.svg" width="50" height="50"></div>
                     <div class="hidden3"><img src="imagesAndResume/PandasLogo.ico" width="50" height="50"></div>
-                    <div class="hidden3"><img src="imagesAndResume/tensorflow-enterprise-svgrepo-com.svg" width="50" height="50"></div>
+                    <div class="hidden3"><img src="imagesAndResume/tensorflow-enterprise-svgrepo-com.svg" width="50" 
+                        height="50"></div>
                 </div>
                 <div class="tech-icons">
                     <div class="hidden3"><img src="imagesAndResume/NumPyLogo.png" width="50" height="50"></div>
@@ -133,9 +156,7 @@
         </div>
         <div class="responsive-diagonal2"></div>
         <div class="third-block" id="experience">
-            <div class="hidden4" id="experience-title">
-                Experience
-            </div>
+            <div class="hidden4" id="experience-title">Experience</div>
             <div id="project-header">
                 <figure class="hidden">
                     <img src="imagesAndResume/TopCopSneaksLogo.jpeg" width="220" height="200" alt="TopCopSneaks Logo">
@@ -180,12 +201,27 @@
                 document.getElementById('temp').style.display = 'none';
             }, 2000); 
         }
-
+        // Function to generate random values for the parallax effect
+        document.querySelectorAll('.parallax-wrap span').forEach((span) => {
+            let randomValue = Math.floor(Math.random() * 9) - 4; // Generates a random integer between -4 and 4
+            if (randomValue >= 0) {
+                randomValue += 1; 
+            }
+            span.setAttribute('value', randomValue);
+        });
         // Event listener to trigger hideSplash after a delay
         window.addEventListener('load', function() {
-            setTimeout(hideSplash, 2000); // Adjust the delay (in milliseconds) as needed
+            setTimeout(hideSplash, 2000);
         });
+        document.addEventListener("mousemove", parallax);
+        function parallax(event) {
+            this.querySelectorAll(".parallax-wrap span").forEach((shift) => {
+                const position = shift.getAttribute("value");
+                const x = (window.innerWidth - event.pageX * position) / 95;
+                const y = (window.innerHeight - event.pageY * position) / 95;
+                shift.style.transform = `translateX(${x}px) translateY(${y}px)`;
+            });
+        }
     </script>
-    <script src="/htripathi12.github.io/compiled/parallax.js"></script>
 </body>
 </html>
