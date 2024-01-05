@@ -25,6 +25,7 @@
     padding-top: 15px; 
     font-size: 19px; 
     font-weight: 500;
+    z-index: 10;
 }
 #resume {
     font-weight: 100;
@@ -178,7 +179,7 @@ html, body {
     justify-content: center;
     width: 100%;
     padding-top: 10px;
-    /* z-index: 10; */
+    z-index: 10;
 }
 .header {
     text-align: center;
@@ -341,7 +342,7 @@ html, body {
 }
 .parallax-wrap span:nth-child(9) {
     top: 70%;
-    left: 75%;
+    left: 80%;
     background: rgb(62, 62, 62);
     z-index: 3;
 }
@@ -385,6 +386,118 @@ html, body {
     top: 70%;
     left: 20%;
     background: grey;
+    z-index: 3;
+}
+.parallax-wrap span:nth-child(17) {
+    /* Adjust properties as needed */
+    top: 80%;
+    left: 5%;
+    background: rgb(62, 62, 62);
+    z-index: 3;
+}
+.parallax-wrap span:nth-child(18) {
+    /* Adjust properties as needed */
+    top: 16%;
+    left: 90%;
+    background: white;
+    z-index: 3;
+}
+.parallax-wrap span:nth-child(19) {
+    /* Adjust properties as needed */
+    top: 33%;
+    left: 85%;
+    background: grey;
+    z-index: 3;
+}
+.parallax-wrap span:nth-child(20) {
+    /* Adjust properties as needed */
+    top: 50%;
+    left: 68%;
+    background: white;
+    z-index: 3;
+}
+.parallax-wrap span:nth-child(21) {
+    /* Adjust properties as needed */
+    top: 50%;
+    left: 30%;
+    background: white;
+    z-index: 3;
+}
+.parallax-wrap span:nth-child(22) {
+    /* Adjust properties as needed */
+    top: 70%;
+    left: 15%;
+    background: grey;
+    z-index: 3;
+}
+.parallax-wrap span:nth-child(23) {
+    /* Adjust properties as needed */
+    top: 30%;
+    left: 23%;
+    background: grey;
+    z-index: 3;
+}
+.parallax-wrap span:nth-child(24) {
+    /* Adjust properties as needed */
+    top: 70%;
+    left: 63%;
+    background: white;
+    z-index: 3;
+}
+.parallax-wrap span:nth-child(25) {
+    /* Adjust properties as needed */
+    top: 10%;
+    left: 30%;
+    background: grey;
+    z-index: 3;
+}
+.parallax-wrap span:nth-child(26) {
+    /* Adjust properties as needed */
+    top: 40%;
+    left: 70%;
+    background: white;
+    z-index: 3;
+}
+.parallax-wrap span:nth-child(27) {
+    /* Adjust properties as needed */
+    top: 90%;
+    left: 70%;
+    background: grey;
+    z-index: 3;
+}
+.parallax-wrap span:nth-child(28) {
+    /* Adjust properties as needed */
+    top: 20%;
+    left: 10%;
+    background: white;
+    z-index: 3;
+}
+.parallax-wrap span:nth-child(29) {
+    /* Adjust properties as needed */
+    top: 72%;
+    left: 80%;
+    background: grey;
+    z-index: 3;
+}
+.parallax-wrap span:nth-child(30) {
+    /* Adjust properties as needed */
+    top: 30%;
+    left: 75%;
+    background: white;
+    z-index: 3;
+}
+.parallax-wrap span:nth-child(31) {
+    /* Adjust properties as needed */
+    top: 95%;
+    left: 40%;
+    background: grey;
+    z-index: 3;
+}
+.parallax-wrap span:nth-child(32) {
+    /* Adjust properties as needed */
+    top: 10%;
+    left: 78%;
+    background: white;
     z-index: 3;
 }
 @keyframes fadeIn {
